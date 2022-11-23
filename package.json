@@ -1,6 +1,6 @@
 {
   "name": "kdu",
-  "version": "0.12.15",
+  "version": "0.12.16",
   "author": "NKDuy",
   "license": "MIT",
   "description": "Simple, Fast & Composable MVVM for building interative interfaces",

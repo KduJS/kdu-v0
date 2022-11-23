@@ -1,5 +1,5 @@
 /*!
- * Kdu.js v0.12.15
+ * Kdu.js v0.12.16
  * (c) 2022 NKDuy
  * Released under the MIT License.
  */
