@@ -1,0 +1,15 @@
+.*
+*.md
+*.yml
+build
+coverage
+dist/kdu.js.map
+dist/kdu.min.js.gz
+examples
+explorations
+perf
+test
+bower.json
+component.json
+gruntfile.js
+sauce_connect.log

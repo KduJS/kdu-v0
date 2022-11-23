@@ -1,0 +1,8 @@
+dist/kdu.js.map
+dist/kdu.min.js.gz
+explorations
+node_modules
+.DS_Store
+.idea
+benchmarks/browser.js
+coverage

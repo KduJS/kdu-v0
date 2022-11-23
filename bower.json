@@ -1,0 +1,19 @@
+{
+  "name": "kdu",
+  "main": "dist/kdu.js",
+  "description": "Simple, Fast & Composable MVVM for building interative interfaces",
+  "authors": ["NKDuy"],
+  "license": "MIT",
+  "ignore": [
+    ".*",
+    "examples",
+    "build",
+    "perf",
+    "test",
+    "grunt",
+    "gruntfile.js",
+    "*.json",
+    "*.md",
+    "*.yml"
+  ]
+}
