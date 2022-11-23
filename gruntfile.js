@@ -19,9 +19,11 @@ module.exports = function (grunt) {
       options: {
         frameworks: ['jasmine', 'commonjs'],
         files: [
+          'vendor/*.js',
           'src/**/*.js'
         ],
         preprocessors: {
+          'vendor/*.js': ['commonjs'],
           'src/**/*.js': ['commonjs']
         },
         singleRun: true
@@ -37,6 +39,7 @@ module.exports = function (grunt) {
           browsers: ['PhantomJS'],
           reporters: ['progress', 'coverage'],
           preprocessors: {
+            'vendor/*.js': ['commonjs'],
             'src/**/*.js': ['commonjs', 'coverage']
           },
           coverageReporter: {

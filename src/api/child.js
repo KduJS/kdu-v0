@@ -25,15 +25,10 @@ exports.$addChild = function (opts, BaseCtor) {
     var ctors = context._childCtors
     ChildKdu = ctors[BaseCtor.cid]
     if (!ChildKdu) {
-      var optionName = BaseCtor.options.name
-      var className = optionName
-        ? _.classify(optionName)
-        : 'KduComponent'
-      ChildKdu = new Function(
-        'return function ' + className + ' (options) {' +
-        'this.constructor = ' + className + ';' +
-        'this._init(options) }'
-      )()
+      ChildKdu = function KduComponent (options) {
+        this.constructor = ChildKdu
+        this._init(options)
+      }
       ChildKdu.options = BaseCtor.options
       ChildKdu.linker = BaseCtor.linker
       ChildKdu.prototype = context
