@@ -66,10 +66,7 @@ module.exports = function (grunt) {
         process.env.KDU_VERSION = next
         grunt.task.run([
           'eslint',
-          'cover',
           'build',
-          'casper',
-          'sauce',
           'version:' + next,
           'git:' + next
         ])
